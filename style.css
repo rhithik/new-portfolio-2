@@ -46,32 +46,6 @@ li {
 .menu li {
     padding: 5px 14px;
 }
-/* dropdown menu */
-.services {
-    position: relative;
-}
-.dropdown {
-    background-color: blue;
-    padding: 1em;
-    position: absolute; /* with respect to parent */
-    display: none;
-    border-radius: 8px;
-    top: 35px;
-}
-.dropdown li + li{
-    margin-top: 10px;
-}
-.dropdown li{
-    padding: 0.5em 1em;
-    width: 8em;
-    text-align: center;
-}
-.dropdown li:hover {
-    background-color: #fff;
-}
-.services:hover .dropdown {
-    display: block;
-}
 /* responsive navbar menu starts */
 /* checkbox hack */
 input[type=checkbox]{
