@@ -72,7 +72,29 @@ input[type="checkbox"] {
   background-color: aliceblue;
   color: #1d1f20;
 }
+
+.services > div {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.services > h2,
+.contact > h2 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.contact > p {
+  text-align: center;
+  padding: 10px;
+}
+
 /* previous work section */
 .previous {
   display: flex;
+}
+
+footer {
+  text-align: center;
+  margin: 10px;
 }
