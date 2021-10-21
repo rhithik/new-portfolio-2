@@ -27,16 +27,13 @@ li {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: #2887F3;
+  background-color: #2887f3;
   color: #e5e5e5;
 }
 .navbar li a {
   color: #e5e5e5;
 }
-/* logo */
-.logo {
-  
-}
+
 /* navbar menu */
 .menu {
   display: flex;
