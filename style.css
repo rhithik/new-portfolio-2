@@ -27,7 +27,7 @@ li {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: blue;
+  background-color: #2887F3;
   color: #e5e5e5;
 }
 .navbar li a {
@@ -35,7 +35,7 @@ li {
 }
 /* logo */
 .logo {
-  font-size: 32px;
+  
 }
 /* navbar menu */
 .menu {
