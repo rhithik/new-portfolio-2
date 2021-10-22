@@ -87,8 +87,15 @@ input[type="checkbox"] {
   margin-top: 1em;
   padding: 5px 10px;
   background-color: #2887f3;
+  color: #e5e5e5;
   border-radius: 5px;
   border-color: #2887f3;
+}
+.container button:hover {
+  background-color: #e5e5e5;
+  color: #2887f3;
+  border-color: #e5e5e5;
+  transition: 0.5s ease;
 }
 
 /* services and contact */
