@@ -64,40 +64,76 @@ input[type="checkbox"] {
   height: 100vh;
 }
 .container {
-  background: gray;
+  /* background: gray; */
   margin: auto;
-  width: 80%;
+  width: 70%;
   height: 80%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
- .container div {
-   
- }
+.container img {
+  width: 400px;
+}
+.container h1 {
+  font-size: 4em;
+  margin-bottom: 0.5em;
+}
+.container h2 {
+  font-size: 2em;
+}
+.container button {
+  font-size: 1.5em;
+  margin-top: 1em;
+  padding: 5px 10px;
+  background-color: #2887f3;
+  border-radius: 5px;
+  border-color: #2887f3;
+}
 
 /* services and contact */
 .services,
 .contact {
   background-color: aliceblue;
   color: #1d1f20;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.services > div {
+.services div,
+.contact div {
   display: flex;
-  justify-content: space-around;
-  padding: 20px;
+  width: 70%;
 }
-.services > h2,
-.contact > h2 {
+.services h2,
+.contact h2,
+.previous h2 {
   text-align: center;
   text-transform: uppercase;
-  padding: 10px;
+  padding: 3rem;
 }
-.contact > p {
+.services article {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+}
+.services li {
+  list-style-type: disc;
+  margin-left: 1rem;
+}
+.contact div {
+  flex-direction: column;
+}
+.contact p {
   text-align: center;
   padding: 10px;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  width: ;
 }
 
 /* previous work section */
