@@ -104,11 +104,11 @@
       <div>
         <h2>Let's Do This!</h2>
         <p>If you like what you see then drop me a line!</p>
-        <form action="POST">
+        <form id="contact" method="POST" action="">
           <label for="name">Name</label>
-          <input type="text" />
+          <input type="text" name="name" id="name"/>
           <label for="email">Email</label>
-          <input type="email" />
+          <input type="email" name="email" id="email"/>
           <label for="message">Inquiry</label>
           <textarea
             name="message"
@@ -117,33 +117,12 @@
             rows="10"
             placeholder="Let's chat!"
           ></textarea>
-          <button>Let's Go!</button>
+          <input type="submit" value="Engage!">
         </form>
-        <div>
-          <ul>
-            <li>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
-              eos fugit consectetur nulla numquam ut laudantium voluptas sed
-              vero tempora reprehenderit assumenda, saepe, quas, blanditiis
-              laborum odit nobis eius repudiandae?
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
-              minima nemo consequuntur a quia velit inventore officiis!
-              Necessitatibus dolor enim minus laboriosam. Praesentium nemo est
-              debitis, incidunt vitae ipsam. Amet!
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              ducimus laudantium obcaecati dolore labore omnis officia. Dolorum
-              quod nesciunt aspernatur perferendis, optio quis? Molestiae,
-              consequuntur facere? Quam corporis dolorem totam.
-            </li>
-          </ul>
-        </div>
       </div>
     </section>
     <hr />
-    <footer>&copy; Jeff McHale 2021</footer>
+    <footer>&copy; Jeff McHale <span id="currentYear"></span></footer>
+    <script src="/index.js"></script>
   </body>
 </html>
