@@ -7,31 +7,31 @@
     <title>Freelance Web Developer | Jeff McHale</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body id="top">
     <nav class="navbar">
       <div class="logo">
         <img
           src="./assets/my_logo.svg"
           style="width: 120px"
-          alt="My initials, J and M"
+          alt="the company logo"
         />
       </div>
       <!-- checkbox hack -->
       <input type="checkbox" id="checkbox_toggle" />
       <label for="checkbox_toggle" class="hamburger">&#9776;</label>
       <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Previous Work</a></li>
-        <li><a href="#">Let's Talk</a></li>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#previous">Previous Work</a></li>
+        <li><a href="#contact">Let's Talk</a></li>
       </ul>
     </nav>
-    <main class="home" id="home">
+    <main class="home">
       <section class="container">
         <div>
           <!-- <h1>Hi, I'm Jeff.</h1> -->
           <h1>I build awesome online interactions</h1>
-          <button>Let's Chat</button>
+          <a href="#contact">Let's Chat</a>
         </div>
         <div>
           <img
@@ -42,7 +42,7 @@
       </section>
     </main>
     <hr />
-    <section class="services">
+    <section class="services" id="services">
       <h2>Services</h2>
       <div>
         <article>
@@ -96,19 +96,21 @@
       </div>
     </section>
     <hr />
-    <section class="previous">
-      <h2>Previous Work</h2>
+    <section class="previous" id="previous">
+      <div>
+        <h2>Previous Work</h2>
+      </div>
     </section>
     <hr />
-    <section class="contact">
+    <section class="contact" id="contact">
       <div>
         <h2>Let's Do This!</h2>
         <p>If you like what you see then drop me a line!</p>
         <form id="contact" method="POST" action="">
           <label for="name">Name</label>
-          <input type="text" name="name" id="name"/>
+          <input type="text" name="name" id="name" />
           <label for="email">Email</label>
-          <input type="email" name="email" id="email"/>
+          <input type="email" name="email" id="email" />
           <label for="message">Inquiry</label>
           <textarea
             name="message"
@@ -117,7 +119,7 @@
             rows="10"
             placeholder="Let's chat!"
           ></textarea>
-          <input type="submit" value="Engage!">
+          <input type="submit" value="Engage!" />
         </form>
       </div>
     </section>

@@ -82,7 +82,7 @@ input[type="checkbox"] {
 .container h2 {
   font-size: 2em;
 }
-.container button {
+.container a {
   font-size: 1.5em;
   margin-top: 1em;
   padding: 5px 10px;
@@ -92,7 +92,7 @@ input[type="checkbox"] {
   border-color: #2887f3;
   cursor: pointer;
 }
-.container button:hover {
+.container a:hover {
   background-color: #e5e5e5;
   color: #2887f3;
   border-color: #e5e5e5;
@@ -111,7 +111,7 @@ input[type="checkbox"] {
 }
 
 .services div,
-.contact div {
+.previous div {
   display: flex;
   width: 70%;
 }
@@ -127,13 +127,13 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;
 }
-.services li,
-.contact li {
+.services li {
   list-style-type: disc;
   margin-left: 1rem;
 }
 .contact div {
   flex-direction: column;
+  width: 45%;
 }
 .contact p {
   text-align: center;
