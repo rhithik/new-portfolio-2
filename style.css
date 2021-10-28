@@ -144,6 +144,15 @@ input[type="checkbox"] {
   flex-direction: column;
 }
 
+.contact form input:invalid {
+  border: 2px solid red;
+  box-shadow: 1px 1px 3px 1px red;
+}
+
+.contact form input:valid {
+  border: 2px solid green
+}
+
 /* previous work section */
 .previous {
   display: flex;
