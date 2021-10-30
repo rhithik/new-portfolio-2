@@ -22,7 +22,7 @@
       <ul class="menu">
         <li><a href="#top">Home</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#previous">Previous Work</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Let's Talk</a></li>
       </ul>
     </nav>
@@ -96,14 +96,15 @@
       </div>
     </section>
     <hr />
-    <section class="previous" id="previous">
+    <section class="projects" id="projects">
       <div>
         <h2>Projects</h2>
-        <div>
+        <div class="project1">
           <h3>Blacks Creek Baptist Church</h3>
           <img
             src="./assets/bcbc-project-photo.png"
             alt="logo for Blacks Creek Baptist Church"
+            style="width: 400px"
           />
           <p>WordPress website I built for a local church.</p>
         </div>
@@ -114,7 +115,7 @@
       <div>
         <h2>Let's Do This!</h2>
         <p>If you like what you see then drop me a line!</p>
-        <form id="contact" method="POST" action="">
+        <form name="contact" method="POST" data-netlify="true">
           <label for="name">Name</label>
           <input type="text" name="name" id="name" required />
           <label for="email">Email</label>
@@ -127,7 +128,7 @@
             rows="10"
             placeholder="I'd like to talk more about..."
           ></textarea>
-          <input type="submit" value="Engage!" />
+          <button type="submit">Engage!</button>
         </form>
       </div>
     </section>

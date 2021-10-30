@@ -102,7 +102,7 @@ input[type="checkbox"] {
 /* services and contact */
 .services,
 .contact {
-  background-color: aliceblue;
+  background-color: #e5e5e5;
   color: #1d1f20;
   padding: 2em;
   display: flex;
@@ -111,13 +111,13 @@ input[type="checkbox"] {
 }
 
 .services div,
-.previous div {
+.projects div {
   display: flex;
   width: 70%;
 }
 .services h2,
 .contact h2,
-.previous h2 {
+.projects h2 {
   text-align: center;
   text-transform: uppercase;
   padding: 3rem;
@@ -126,12 +126,15 @@ input[type="checkbox"] {
   width: 33%;
   display: flex;
   flex-direction: column;
+  border: 1px solid #1d1f20;
+  margin: 5px;
+  padding: 15px;
 }
 .services li {
   list-style-type: disc;
   margin-left: 1rem;
 }
-.contact div {
+.projects .contact div {
   flex-direction: column;
   width: 45%;
 }
@@ -142,19 +145,42 @@ input[type="checkbox"] {
 .contact form {
   display: flex;
   flex-direction: column;
+  border-radius: 15px;
 }
 
-.contact form input:invalid {
+.contact input,
+.contact label,
+.contact textarea {
+  margin-top: 5px;
+}
+
+.contact input:invalid {
   border: 2px solid red;
-  box-shadow: 1px 1px 3px 1px red;
+  box-shadow: red;
 }
 
-.contact form input:valid {
-  border: 2px solid green
+.contact input:valid {
+  border: 2px solid green;
 }
 
-/* previous work section */
-.previous {
+.contact button {
+  border: 2px solid #2887f3;
+  background: #2887f3;
+  color: #e5e5e5;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  border: 2px solid #1d1f20;
+  background: #e5e5e5;
+  color: #1d1f20;
+}
+
+/* projects work section */
+.projects {
   display: flex;
 }
 
