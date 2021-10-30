@@ -21,6 +21,11 @@ a {
 li {
   list-style: none;
 }
+
+i.fas,
+i.fab {
+  font-size: 3em;
+}
 /* navbar styling starts */
 .navbar {
   display: flex;
