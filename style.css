@@ -10,7 +10,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   height: 100vh;
-  background-color: #1d1f20;
+  background-color: #050505;
   color: #e5e5e5;
 }
 
@@ -47,7 +47,7 @@ i.fab {
   font-size: 18px;
 }
 .menu li:hover {
-  background-color: #1d1f20;
+  background-color: #050505;
   border-radius: 5px;
   transition: 0.5s ease;
 }
@@ -109,7 +109,7 @@ input[type="checkbox"] {
 .services,
 .contact {
   background-color: #e5e5e5;
-  color: #1d1f20;
+  color: #050505;
   padding: 2em;
   display: flex;
   flex-direction: column;
@@ -132,7 +132,7 @@ input[type="checkbox"] {
   width: 33%;
   display: flex;
   flex-direction: column;
-  border: 1px solid #1d1f20;
+  border: 1px solid #050505;
   margin: 5px;
   padding: 15px;
 }
@@ -180,7 +180,7 @@ input[type="checkbox"] {
 }
 
 .contact button:hover {
-  border: 2px solid #1d1f20;
+  border: 2px solid #050505;
   background: #e5e5e5;
   color: #1d1f20;
 }
