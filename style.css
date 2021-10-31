@@ -90,7 +90,8 @@ input[type="checkbox"] {
   font-size: 2em;
 }
 .container a,
-.services a {
+.services a,
+.projects a {
   font-size: 1.5em;
   margin-top: 1em;
   padding: 5px 10px;
@@ -100,7 +101,8 @@ input[type="checkbox"] {
   border-color: #2887f3;
   cursor: pointer;
 }
-.container a:hover {
+.container a:hover,
+.projects a:hover {
   background-color: #e5e5e5;
   color: #2887f3;
   border-color: #e5e5e5;
@@ -117,13 +119,13 @@ input[type="checkbox"] {
   flex-direction: column;
   align-items: center;
 }
-.services a {
+.services a,
+.projects a {
   font-size: 1em;
   text-align: center;
 }
 
-.services div,
-.projects div {
+.services div {
   display: flex;
   width: 90%;
 }
@@ -146,10 +148,6 @@ input[type="checkbox"] {
 .services p {
   padding-bottom: 20px;
 }
-.projects .contact div {
-  flex-direction: column;
-  width: 45%;
-}
 .contact p {
   text-align: center;
   padding: 10px;
@@ -159,11 +157,10 @@ input[type="checkbox"] {
   flex-direction: column;
   border-radius: 15px;
 }
-
 .contact input,
 .contact label,
 .contact textarea {
-  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .contact input:invalid {
@@ -194,8 +191,17 @@ input[type="checkbox"] {
 /* projects work section */
 .projects {
   display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
 }
-
+.project1 {
+  display: flex;
+  margin: 20px;
+}
+.project-info {
+  margin-left: 20px;
+}
 footer {
   text-align: center;
   margin: 10px;
