@@ -125,7 +125,7 @@ input[type="checkbox"] {
 .services div,
 .projects div {
   display: flex;
-  width: 70%;
+  width: 90%;
 }
 .services h2,
 .contact h2,
@@ -138,13 +138,13 @@ input[type="checkbox"] {
   width: 33%;
   display: flex;
   flex-direction: column;
-  border: 1px solid #050505;
   margin: 5px;
   padding: 15px;
 }
-.services li {
-  list-style-type: disc;
-  margin-left: 1rem;
+.services i,
+.services h3,
+.services p {
+  padding-bottom: 20px;
 }
 .projects .contact div {
   flex-direction: column;
