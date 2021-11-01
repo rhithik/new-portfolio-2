@@ -150,7 +150,10 @@ input[type="checkbox"] {
   padding-bottom: 20px;
 }
 .services p {
-height: 250px;
+  height: 250px;
+}
+.contact div {
+  width: 90%;
 }
 .contact p {
   text-align: center;
@@ -167,14 +170,15 @@ height: 250px;
   margin-bottom: 10px;
 }
 
-.contact input:invalid {
+/* deciding on validation techniques */
+/* .contact input:invalid {
   border: 2px solid red;
   box-shadow: red;
 }
 
 .contact input:valid {
   border: 2px solid green;
-}
+} */
 
 .contact button {
   border: 2px solid #2887f3;
@@ -201,9 +205,19 @@ height: 250px;
 .project1 {
   display: flex;
   margin: 20px;
+  width: 100%;
 }
 .project-info {
   margin-left: 20px;
+  width: 50%;
+}
+.project-info p {
+  height: 150px;
+}
+.project-info a {
+  display: flex;
+  width: 100px;
+  justify-content: center;
 }
 footer {
   text-align: center;
