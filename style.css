@@ -88,6 +88,7 @@ input[type="checkbox"] {
 }
 .container h2 {
   font-size: 2em;
+  margin-bottom: 1em;
 }
 .container a,
 .services a,
@@ -134,7 +135,7 @@ input[type="checkbox"] {
 .projects h2 {
   text-align: center;
   text-transform: uppercase;
-  padding: 3rem;
+  padding: 3rem 1rem 1em 1em;
 }
 .services article {
   width: 33%;
@@ -153,7 +154,7 @@ input[type="checkbox"] {
   height: 250px;
 }
 .contact div {
-  width: 90%;
+  width: 80%;
 }
 .contact p {
   text-align: center;
@@ -168,6 +169,11 @@ input[type="checkbox"] {
 .contact label,
 .contact textarea {
   margin-bottom: 10px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
 }
 
 /* deciding on validation techniques */
@@ -205,7 +211,7 @@ input[type="checkbox"] {
 .project1 {
   display: flex;
   margin: 20px;
-  width: 100%;
+  width: 90%;
 }
 .project-info {
   margin-left: 20px;
@@ -213,6 +219,7 @@ input[type="checkbox"] {
 }
 .project-info p {
   height: 150px;
+  width: 250px;
 }
 .project-info a {
   display: flex;
