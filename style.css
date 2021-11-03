@@ -46,7 +46,7 @@ i.fab {
   gap: 1em;
   font-size: 18px;
 }
-.menu li:hover,
+.navlinks li:hover,
 .services a:hover {
   background-color: #050505;
   border-radius: 5px;
@@ -54,17 +54,6 @@ i.fab {
 }
 .menu li {
   padding: 5px 14px;
-}
-/* responsive navbar menu starts */
-/* checkbox hack */
-input[type="checkbox"] {
-  display: none;
-}
-/* hamburger menu */
-.hamburger {
-  display: none;
-  font-size: 24px;
-  user-select: none;
 }
 /* main content */
 .home {
@@ -108,6 +97,10 @@ input[type="checkbox"] {
   color: #2887f3;
   border-color: #e5e5e5;
   transition: 0.5s ease;
+}
+.projects img {
+  width: 400px;
+  height: auto;
 }
 
 /* services and contact */
@@ -175,17 +168,6 @@ input[type="checkbox"] {
 .contact textarea {
   padding: 10px;
 }
-
-/* deciding on validation techniques */
-/* .contact input:invalid {
-  border: 2px solid red;
-  box-shadow: red;
-}
-
-.contact input:valid {
-  border: 2px solid green;
-} */
-
 .contact button {
   border: 2px solid #2887f3;
   background: #2887f3;
@@ -208,10 +190,15 @@ input[type="checkbox"] {
   flex-direction: column;
   align-items: center;
 }
-.project1 {
+.project-group {
   display: flex;
   margin: 20px;
   width: 90%;
+}
+.project-group a:first-child {
+  background-color: #050505;
+  margin: 0;
+  padding: 0;
 }
 .project-info {
   margin-left: 20px;
@@ -229,4 +216,42 @@ input[type="checkbox"] {
 footer {
   text-align: center;
   margin: 10px;
+}
+
+/* responsive behavior */
+@media (max-width: 750px) {
+  .container {
+    width: 90%;
+  }
+  .container h1 {
+    font-size: 3rem;
+  }
+  .container h2 {
+    font-size: 1.75rem;
+  }
+  .container a {
+    width: 100%;
+  }
+  .container img {
+    display: none;
+  }
+  .services div {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .services article {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+  .project-group {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-group img {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+  }
+  
 }

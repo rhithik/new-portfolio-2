@@ -16,15 +16,14 @@
           alt="the company logo"
         />
       </div>
-      <!-- checkbox hack -->
-      <input type="checkbox" id="checkbox_toggle" />
-      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-      <ul class="menu">
-        <li><a href="#top">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Let's Talk</a></li>
-      </ul>
+      <div class="nav-links">
+        <ul class="menu">
+          <li><a href="#top">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Let's Talk</a></li>
+        </ul>
+      </div>
     </nav>
     <main class="home">
       <section class="container">
@@ -82,12 +81,13 @@
     <section class="projects" id="projects">
       <div>
         <h2>Projects</h2>
-        <div class="project1">
-          <img
+        <div class="project-group">
+          <a href="blackscreekbapsitstchurch.com">
+            <img
             src="./assets/bcbc-project-photo.png"
             alt="logo for Blacks Creek Baptist Church"
-            style="width: 400px; height: auto"
           />
+          </a>
           <div class="project-info">
             <h3>Blacks Creek Baptist Church</h3>
             <br />
@@ -133,7 +133,7 @@
             id="message"
             cols="30"
             rows="10"
-            placeholder="I'd like to talk more about..."
+            placeholder="Hi Jeff, I've got a project I'd like to talk with you about. Let's see if this would be a good fit."
           ></textarea>
           <button type="submit">Engage!</button>
         </form>
