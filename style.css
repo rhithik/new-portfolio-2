@@ -287,6 +287,8 @@ footer {
 
   .nav-links ul li {
     text-align: center;
+    width: 50%;
+    margin: 0 auto;
   }
 
   .nav-links ul li a {
