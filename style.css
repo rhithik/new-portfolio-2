@@ -6,26 +6,17 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: Arial, Helvetica, sans-serif;
   height: 100vh;
   background-color: #050505;
   color: #e5e5e5;
 }
-
 a {
   text-decoration: none;
 }
-
 li {
   list-style: none;
-}
-
-i.fas,
-i.fab {
-  font-size: 3em;
-  color: #2887f3;
 }
 /* navbar styling starts */
 .navbar {
@@ -36,10 +27,14 @@ i.fab {
   background-color: #2887f3;
   color: #e5e5e5;
 }
+.fixed-nav nav {
+  position: fixed;
+  box-shadow: 0 5px rgba(0,0,0,0.1);
+  width: 100%;
+}
 .navbar li a {
   color: #e5e5e5;
 }
-
 /* navbar menu */
 .menu {
   display: flex;
@@ -68,7 +63,7 @@ i.fab {
 .home {
   height: 90vh;
 }
-.container {
+.container-main {
   /* background: gray; */
   margin: auto;
   max-width: 70%;
@@ -77,28 +72,28 @@ i.fab {
   align-items: center;
   justify-content: space-around;
 }
-.container img {
+.container-main img {
   width: 400px;
 }
-.container h1 {
+.container-main h1 {
   font-size: 4em;
   margin-bottom: 0.5em;
 }
-.container h2 {
+.container-main h2 {
   font-size: 2em;
   margin-bottom: 1em;
 }
-.container a,
-.services a,
+.container-main a,
 .projects a {
-  font-size: 1.5em;
-  margin-top: 1em;
+  font-size: 1.5rem;
+  margin-top: 1rem;
   padding: 5px 10px;
   background-color: #2887f3;
   color: #e5e5e5;
   border-radius: 5px;
   border-color: #2887f3;
   cursor: pointer;
+  text-align: center;
 }
 .container a:hover,
 .projects a:hover {
@@ -117,20 +112,7 @@ i.fab {
 .contact {
   background-color: #e5e5e5;
   color: #050505;
-  padding: 2em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.services a,
-.projects a {
-  font-size: 1em;
-  text-align: center;
-}
-
-.services div {
-  display: flex;
-  width: 90%;
+  padding: 2rem;
 }
 .services h2,
 .contact h2,
@@ -139,24 +121,43 @@ i.fab {
   text-transform: uppercase;
   padding: 3rem 1rem 1em 1em;
 }
-.services article {
-  width: 33%;
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.service-card {
   display: flex;
   flex-direction: column;
-  margin: 5px;
-  padding: 15px;
-  height: 350px;
+  width: 280px;
+  height: 400px;
+  margin: 1rem 3rem;
 }
-.services i,
-.services h3,
-.services p {
-  padding-bottom: 20px;
+.service-card i {
+  font-size: 3em;
+  color: #2887f3;
+  padding-bottom: 2rem;
 }
-.services p {
-  height: 250px;
+.service-card h3,
+.service-card p {
+  padding-bottom: 1rem;
+}
+.service-card p {
+  height: 200px;
+}
+.service-card a {
+  align-self: flex-end;
+  color: #e5e5e5;
+  background-color: #2887f3;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
 }
 .contact div {
-  width: 80%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
 }
 .contact p {
   text-align: center;
@@ -165,14 +166,14 @@ i.fab {
 .contact form {
   display: flex;
   flex-direction: column;
-  border-radius: 15px;
 }
 .contact input,
 .contact label,
 .contact textarea {
   margin-bottom: 10px;
+  border-style: none;
+  border-radius: 5px;
 }
-
 .contact input,
 .contact textarea {
   padding: 10px;
@@ -186,18 +187,20 @@ i.fab {
   border-radius: 20px;
   cursor: pointer;
 }
-
 .contact button:hover {
   border: 2px solid #050505;
   background: #e5e5e5;
   color: #1d1f20;
 }
-
-/* projects work section */
+/* projects section */
 .projects {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.projects a {
+  font-size: 1em;
+  text-align: center;
 }
 .project-group {
   display: flex;
@@ -214,7 +217,7 @@ i.fab {
   width: 50%;
 }
 .project-info p {
-  height: 150px;
+  height: 125px;
   width: 250px;
 }
 .project-info a {
@@ -229,29 +232,21 @@ footer {
 
 /* responsive behavior */
 @media (max-width: 750px) {
-  .container {
+  .container-main {
     width: 90%;
+    padding: 2rem;
   }
-  .container h1 {
+  .container-main h1 {
     font-size: 3rem;
   }
-  .container h2 {
+  .container-main h2 {
     font-size: 1.75rem;
   }
-  .container a {
+  .container-main a {
     width: 100%;
   }
-  .container img {
+  .container-main img {
     display: none;
-  }
-  .services div {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-  }
-  .services article {
-    width: 100%;
-    padding-bottom: 2rem;
   }
   .project-group {
     display: flex;
@@ -262,19 +257,19 @@ footer {
     margin: 0 auto;
     padding-bottom: 1rem;
   }
+  .contact div {
+    width: 90%;
+  }
   .menu-btn {
     display: flex;
   }
-
   .menu-btn:hover {
     border-bottom: #333 2px solid;
   }
-
   .navbar {
     flex-direction: column;
     align-items: flex-start;
   }
-
   .nav-links {
     display: none;
     width: 100%;
