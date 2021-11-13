@@ -28,28 +28,28 @@ function fixNav() {
 window.addEventListener("scroll", fixNav);
 
 // form validation
-// const nameInput = document.getElementById("name");
-// const emailInput = document.getElementById("email");
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
 
-// nameInput.addEventListener("input", () => {
-//   nameInput.setCustomValidity("");
-//   nameInput.checkValidity();
-// });
+nameInput.addEventListener("input", () => {
+  nameInput.setCustomValidity("");
+  nameInput.checkValidity();
+});
 
-// nameInput.addEventListener("invalid", () => {
-//   nameInput.setCustomValidity("Please enter your name.");
-// });
+nameInput.addEventListener("invalid", () => {
+  nameInput.setCustomValidity("Please enter your name.");
+});
 
-// emailInput.addEventListener("input", () => {
-//   emailInput.setCustomValidity("");
-//   emailInput.checkValidity();
-// });
+emailInput.addEventListener("input", () => {
+  emailInput.setCustomValidity("");
+  emailInput.checkValidity();
+});
 
-// emailInput.addEventListener("invalid", () => {
-//   emailInput.setCustomValidity("Please enter a valid email address.");
-// });
+emailInput.addEventListener("invalid", () => {
+  emailInput.setCustomValidity("Please enter a valid email address.");
+});
 
-// function validateEmail(email) {
-//   var regex = /\S+@\S+\.\S+/;
-//   return regex.test(email);
-// }
+function validateEmail(email) {
+  var regex = /\S+@\S+\.\S+/;
+  return regex.test(email);
+}

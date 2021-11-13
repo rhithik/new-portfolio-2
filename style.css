@@ -18,6 +18,9 @@ a {
 li {
   list-style: none;
 }
+.hidden {
+  visibility: hidden;
+}
 /* navbar styling starts */
 .navbar {
   display: flex;
@@ -29,12 +32,13 @@ li {
 }
 .fixed-nav nav {
   position: fixed;
-  box-shadow: 0 5px rgba(0,0,0,0.1);
+  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
   width: 100%;
 }
 .navbar li a {
   color: #e5e5e5;
 }
+
 /* navbar menu */
 .menu {
   display: flex;
@@ -237,7 +241,7 @@ footer div {
   width: 50px;
 }
 footer a {
-  color: #e5e5e5
+  color: #e5e5e5;
 }
 footer i {
   font-size: 1.5rem;
